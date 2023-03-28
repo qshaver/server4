@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Data from an API</title>
+</head>
+<body>
+  <h1>Get Data from an API</h1>
+</body>
+</html>
+<script type="text/javascript">
+    async function getData() {
+        const response = await fetch('/api');
+        const data = await response.json();
+        console.log(data);
+    }
+    getData();
+
+    /*
+    const data = { x: 1, y: 2 }; // javascript object
+    const postOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    };
+    fetch('/api', postOptions)
+        .then(response => response.json())
+        .then(data => {
+            // do something with the parsed data
+            console.log(data);
+            console.log(data.status,data.x,data.y);
+        })
+        .catch(error => {
+            // handle any errors
+        });
+*/
+   
+</script> 
