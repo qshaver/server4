@@ -5,7 +5,10 @@ const Datastore = require('nedb');
 
 // setup and run an express server
 const app = express();
-app.listen(3000, () => console.log('listening at 3000'));
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log('Starting server using port '+port);
+});
 
 // method in express that serves up a web page that we put in the public folder
 app.use(express.static('public'));
