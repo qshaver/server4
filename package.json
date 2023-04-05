@@ -14,6 +14,10 @@
   "dependencies": {
     "brew": "^0.0.8",
     "express": "^4.18.2",
-    "nedb": "^1.8.0"
+    "nedb": "^1.8.0",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^13.2.2"
   }
 }
